@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>aesthetique.me.uk: mobile speed readout</title>
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #0b0f19;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+    main {
+      width: 100%;
+      max-width: 460px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    header {
+      text-align: center;
+      width: 100%;
+    }
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .summary {
+      color: #94a3b8;
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+    .video-container {
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      background: #000000;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      border: 1px solid #1e293b;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    footer {
+      color: #64748b;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>aesthetique.me.uk: mobile speed readout</h1>
+      <p class="summary">Mobile speed readout for aesthetique.me.uk: Google&#x27;s mobile score goes from 33 to 52 out of 100 on a private test copy with the fix applied.</p>
+    </header>
+    <div class="video-container">
+      <video controls playsinline preload="metadata">
+        <source src="readout.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <footer>Prepared by Freigeist</footer>
+  </main>
+</body>
+</html>
